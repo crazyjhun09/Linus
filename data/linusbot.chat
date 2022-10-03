@@ -1,0 +1,94 @@
+intro < root
+general < root 
+unknown < root
+
+intro : hello|hi|what|what's up|sup|who function|help .
+unknown : when|bangskie .
+general : help|assistance|computer|bsod|blue|windows|update|fail|internet|connection|slow|stuck|lag|too|long|hot|overheat|crash|crashing|not|responding|turns|off|shuts down|hhelp|assemble|build|building|cpuahelp|cputhelp|psuahelp|psuthelp|moboahelp|mobothelp|motherboardahelp|motherboardthelp|ramahelp|ramthelp|ssdahelp|ssdthelp|gpuahelp|gputhelp help|assistance|computer|bsod|blue|windows|update|fail|internet|connection|slow|stuck|lag|too|long|hot|overheat|crash|crashing|not|responding|turns|off|shuts down|hhelp|assemble|build|building|cpuahelp|cputhelp|psuahelp|psuthelp|moboahelp|mobothelp|motherboardahelp|motherboardthelp|ramahelp|ramthelp|ssdahelp|ssdthelp|gpuahelp|gputhelp . 
+
+intro = Hi I'm Linus, your tech tips buddy! Ask me anything about computers .
+unknown = Sorry, I don't think I'm familiar with this yet .
+
+help < general
+help : help|assistance .
+help = What can I help you with? .
+
+bsod < general
+bsod : bsod|blue|blue screen|death .
+bsod = That looks to be either a driver or hardware issue. Make sure to update your drivers and look for driver errors inside device manager. For a more straightforward solution, take note of the stop code that appears during the blue screen and search the internet for this specific code . 
+
+winup < general 
+winup : windows|update|updates|fail|cannot install .
+winup = Before anything else, you may want to restart your computer. Check if you are running out of disk space. You can free some disk space using the disk cleanup program. If this does not resolve your problem, you can run the windows update troubleshooter. For your last resort, try to look for alternative solutions online .
+
+nonet < general
+nonet : internet|no internet|connection .
+nonet = Before anything else, you may want to restart your networking devices especially your computer. Try running windows diagnostics by right clicking the network icon on the right-side portion of your taskbar and clicking "Troubleshoot problems". If you are using wireless network, try switching to wired thru a LAN cable. You can also try reverting some router settings or even restore default settings .
+
+slow < general
+slow : slow|stuck|lag|lagging|very slow|too long .
+slow = A slow computer is a result of many possible causes. Common diagnoses include malware, viruses, outdated software, low memory, low disk space, and not using an SSD. Most modern systems use SSDs, check your computer if it uses an SSD and if your OS is installed on it. You may also want to reinstall your OS every once in a while, like every year or so, which can help speed up your computer as well .
+
+hot < general
+hot : overheat|temperature|degrees|heat .
+hot = High temperatures can cause your computer to thermal throttle or to run slower in order to lower the temperature. If you're running into overheating problems, consider cleaning your computer. Dust build up within the fan blades and air intake and exhaust paths can hinder with your case's air flow. ^ If you're up to it, you can replace your CPU or GPU's thermal paste to solve this problem. If you need assistance with assembly/disassembly, I can help point you in the right direction .
+
+crash < general
+crash : crashing|responding|hang|frozen|crashes .
+crash = There are a handful of reasons as to why your applications and computer can freeze or crash. Please check if you're running too many demanding applications simultaneously and make sure that you close any unwanted apps or browser tabs. You may also be running into incompatibility issues, so make sure that your device meets the requirements for the app that you are trying to run. Finally, you can right-click on your application and select Properties. Head to the compatibility tab and try to run it as an administrator or in compatibility mode for older Windows versions. If that doesn't work, try to look for alternative solutions online .
+
+shutdown < general
+shutdown : closing|shuts|down|randomly|loses|power|off .
+shutdown = If your computer has been turning off or crashing randomly, there are a number of possibilities that you can consider. Try to perform a disk scan or disk cleanup to check if your drive has any bad or corrupted sectors. Make sure that your system's drivers are all up to date, as they may cause incompatibility issues with other components. If you are able to access your desktop, head to Windows Event Viewer via the start menu and check under Windows Logs -> System. Pinpoint the log where the crashes occur and search the web for the corresponding Event ID shown in the bottom of the window. Worst case, this may be caused my a hardware failure; if you think this is the case, type "hhelp" .
+
+hardhelp < general
+hardhelp : hhelp|assembly|assemble|build|building .
+hardhelp = I got you! I can provide you with several tips in installation and troubleshooting of hardware components! If you need help with any of these components, type component followed by ahelp if you need assembly or installation help; else, type component followed by thelp if you need troubleshooting help! Ex: cpuahelp (installation) or cputhelp (troubleshooting). .
+
+cahelp < general
+cahelp : cpuahelp .
+cahelp = To install your CPU (whether it's AMD or Intel), take not of a golden triangle located in one of the corners of the CPU. This will line up with a plastic indent of an arrow on the motherboard socket. Gently lower your CPU into the socket. It should fit snugly without force, be careful with your pins! AMD's CPU pins are located on the CPU, while they're located on the motherboard socket itself for Intel chips. Finally, for your cooler, refer to the manual especially if you are using an aftermarket cooler from a third party vendor. Always make sure that you have the proper brackets for your CPU's socket type, and remove any protective plastic on the cooler's contact plate. Verify if your cooler has pre-applied thermal paste and apply a pea-sized amount of your own directly onto the CPU's heat spreader if it doesn't. For more information, refer to your vendor's manual. .
+
+cthelp < general
+cthelp : cputhelp .
+cthelp = Hi there, there's not a lot of troubleshooting to be done on a CPU, unfortunately. A properly installed processor simply just works and is almost always guaranteed to outlast the life of an entire system. In the case of compatibility, make sure that your motherboard is compatible with your current CPU's socket type. In some cases, if your system fails to boot on a brand new CPU, you might need to perform a BIOS update on your current motherboard to make sure that it has the latest support on your CPU. With that said, if you suspect that your CPU has been physically damaged, there's not much you can do at home as a user. If it has incurred damage from a severe case of overheating, or from a motherboard/psu failure that has caused a short, unfortunately, it might be as good as dead. You can try to reseat the CPU and apply a fresh new thermal paste as well as clean the fans. If that fails, it might still be worth taking to a technician for further testing, but don't get your hopes up. .
+
+pahelp < general
+pahelp : psuahelp .
+pahelp = There are a number of ways to install your PSU, depending on your chassis. Some cases have the slot for a PSU on the top, while some are on the bottom, with most modern cases having a PSU shroud. Refer to your case manufacturer's manual to determine this if you are unsure. To install your PSU, it is as easy as inserting the unit into the case and screwing it in. If you want your PSU to draw in fresh air from outside the case to cool itself, you should orient your PSU fan pointing OUTSIDE of the case (point downward if installed at the bottom, and upward and installed at the top). If you want your PSU to act as an exhaust for your system, have the fan face INSIDE of the case to suck in air from the inside. If you're using a modular or semi-modular PSU, connect the necessary cables included in the packaging. You generally would need a 24-pin cable to power the motherboard, a 4+4 pin to power the CPU (also on the motherboard), a 6+2 PCIE cable for PCIE devices such as your PSU, and a SATA cable for your hard drives and sometimes, a MOLEX connectors for your fans. Once you have your cables in place, properly pre-route them through the case so they're ready to be installed once you get your other components installed. For more information, refer to your vendor's manual. .
+
+pthelp < general
+pthelp : psuthelp .
+pthelp = PSU's are not serviceable and are quite tricky to troubleshoot. It is one of the most important components in your system that you shouldn't save money on. For more information, refer to your vendor's manual. .
+
+mahelp < general
+mahelp : moboahelp|motherboardahelp .
+mahelp = For your motherboard, it is recommended to have other components (CPU + Cooler, M.2 SSD, RAM) installed first before installing it into your chassis. Once you're ready, verify whether your case already has standoffs installed. They should look similar to screws, but with a cylindrical head with a hole that accepts other screws. If your chassis doesn't have these installed, locate them in your chassis' packaging and install them into the screwholes that should lineup with the screwholes in your motherboard. Before inserting your motherboard, install the I/O shield onto the case if your motherboard doesn't have it preinstalled. It should be a thin, aluminmum plate that matches the ports on the back of your motherboard; this should be installed on the rectangular opening on the back of your chassis. Finally, install your motherboard and screw in the correct screws, peel off any plastic film that may be attached in places such as the VRM shroud. Connect your chassis' front panel connectors (USB, Power button, Reset button, Front panel audio) onto the motherboard. These are labeled both on the port and on the cables themselves. They are tiny so make sure you have enough room and lighting! For more information, refer to your vendor's manual. .
+
+mthelp < general
+mthelp : mobothelp|motherboardthelp .
+mthelp = Most of the troubleshooting steps you can take when working with your motherboard is on the BIOS side. The BIOS is the screen that you encounter when you mash a trigger button (usuall DEL or F12) during startup. This screen contains your system's full details and configuration where you can tweak numerous settings that may affect your system's stability and performance. It is not recommended for a novice, though, but in the event that a change may occur in your system's BIOS configuration due to a change in hardware, you can reset the settings to default. In the event that you are unable to access your system's BIOS or your computer won't boot, you can achieve the same result by reseating the CMOS battery of your system. The CMOS battery is a circular battery (similar to a wrist watch's battery) located close to the bottom of your motherboard. Removing this battery and reinserting it after a few seconds will fully reset your BIOS settings as well as any data that is contained in the CMOS chip such as the date and time. For more information, refer to your vendor's manual. .
+
+gahelp < general
+gahelp : gpuahelp .
+gahelp = Installing your GPU is easy! First, determine which PCIE slot you're going to use on your motherboard if it has more than one. My recommendation is to use the first one or the one closest to the CPU, as this allows you to take advantage of the most optimal lanes for better bandwidth and gives you more breathing space for airflow. Line up your GPU to the PCIE slot and push straight and firmly until you hear a distinct *click*, this tells you that your GPU has been successfully installed! Don't over push or jiggle the GPU! Finally, connect your PSU's PCIE cables if your GPU requires external power. This can vary from one 6 pin or 8 pin, up to three for some very high-end cards. Insert these cables firmly and all the way in. For more information, refer to your vendor's manual. .
+
+gthelp < general
+gthelp : gputhelp .
+gthelp = For more information, refer to your vendor's manual. .
+
+rahelp < general
+rahelp : ramahelp .
+rahelp = Installing your RAM is easy! First, do you have multiple sticks? If you only have 1, you can install it on whichever slot you'd like, although I'd recommend going for the one near your CPU. If you have 2, count how many RAM slots you have on your motherboard. If your motherboard only has 2, then you can safely fill both. If it has 4, however, you need to install them at an alternating position. Facing your motherboard, let's label each of the 4 slots as slot A, B, C, and D, respectively. I would recommend installing your 2 sticks in A and C, or B and D. This is to take advantage of dual-channel speeds and latency. For actually installing the RAM sticks, first, pull back the locks located on the ends of the slots. Then, make sure that the pins are lined up with the slot. There should be a gap near the center of both the slot and the stick, make sure these are also aligned. Then, you can proceed to install the RAM by pushing them into the slot and applying even pressure across the stick until you hear a *click*. Verify that the RAM is inserted all the way in and that all of the locks/clips of the slot are engaged. Lastly, if your RAM modules are rated at high speeds, you would want to enable the XMP profile in your motherboard's BIOS to take advantage of the maximum speeds. For more information, refer to your vendor's manual. .
+
+rthelp < general
+rthelp : ramthelp .
+rthelp = For more information, refer to your vendor's manual. .
+
+ssahelp < general
+ssahelp : ssdahelp .
+ssahelp = Hi! What type of SSD do you have? If you have an M.2 SSD (SATA or NvME), find the dedicated slot on the motherboard for your SSD. There should be a pre-installed standoff on the slot for you, if it doesn't line up with the length of your SSD, you can easily unscrew it and screw it into the proper slot. Finally, insert your SSD at a slight angle into the slot until you see the pins going in. Then, you can safely push it down and line it up with the standoff before proceeding to screw it or clip it into place. On the other hand, if you have a 2.5" SATA SSD, you should first attach the SSD onto its slot within the chassis. Most chassis have a 2.5" bracket behind the case or within the PSU shroud where you would find your hard drive cages. Once you've got that secured, you're going to need 2 types of cables. One is a SATA connector that should be connected into your SSD and the other end into your motherboard. The other is a wider SATA connector that's routed from your PSU and should also be attached to your SSD for power. For more information, refer to your vendor's manual. .
+
+ssthelp < general
+ssthelp : ssdthelp .
+ssthelp = For more information, refer to your vendor's manual. .
