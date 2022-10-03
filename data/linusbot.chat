@@ -10,7 +10,7 @@ intro = Hi I'm Linus, your tech tips buddy! Ask me anything about computers .
 unknown = Sorry, I don't think I'm familiar with this yet .
 
 help < general
-help : help|assistance .
+help : help|assistance help|assistance help|assistance .
 help = What can I help you with? .
 
 bsod < general
